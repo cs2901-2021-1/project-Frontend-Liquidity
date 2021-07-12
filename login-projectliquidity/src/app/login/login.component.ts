@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { GoogleLoginProvider, SocialAuthService, SocialUser } from 'angularx-social-login';
 
 @Component({
@@ -11,7 +12,8 @@ export class LoginComponent implements OnInit {
   userLogged: SocialUser;
   isLogged: boolean;
 
-  constructor(private authService: SocialAuthService) {
+  constructor(private authService: SocialAuthService, private router: Router) {
+  
    }
 
   ngOnInit(): void {
@@ -28,11 +30,12 @@ export class LoginComponent implements OnInit {
         console.log(data);
         this.socialUser = data;
         this.isLogged = true;
+        this.router.navigate(['/'])
       }
       );
   }
 
-  signOut(): void {
+  logOut(): void {
     this.authService.signOut();
   }
 

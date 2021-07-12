@@ -1,16 +1,24 @@
 <app-menu></app-menu>
-<div class="container" *ngIf="!isLogged">
+<body>
+<div class="login-page" *ngIf="!isLogged" style="background-image: url(https://intranet.utec.edu.pe/sites/default/files/styles/large/public/field/image/background.jpg);">
     <div class="row m-3">
         <div class="col-md-6 mx-auto">
             <div class="card text-center">
                 <div class="card-header">
-                  Inicio de sesion
+                  
+                </div>
+                <div class="logo">
+                  <img src="https://intranet.utec.edu.pe/sites/default/files/styles/large/public/field/image/logo.png" alt="Logo UTEC">
                 </div>
                 <div class="card-body">
                   <button class="btn btn-outline-danger btn-lg btn-block" (click)="signInWithGoogle()"> 
-                    <i class="fab fa-google-plus"></i>Iniciar sesion con Google</button>
+                    <span>
+                      <img src="https://intranet.utec.edu.pe/sites/default/files/google.svg">
+                    </span>Iniciar sesion con Google</button>
                 </div>
+
               </div>
         </div>
     </div>
 </div>
+</body>
