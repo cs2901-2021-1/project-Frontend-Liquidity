@@ -7,12 +7,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active" *ngIf="isLogged">
-          <a class="nav-link" routerLink="/">
+          <a class="nav-link" routerLink="/home">
             <i class ="fas fa-home"></i>Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active" *ngIf="isLogged">
           <a class="nav-link" routerLink="/program">
             <i class="fas fa-play"></i>Program</a>
+        </li>
+        <li class="av-item active" *ngIf="isLogged">
+          <a class="nav-link" routerLink="/users">
+            <i class="fas fa-users"></i>Users</a>
         </li>
         
       </ul>

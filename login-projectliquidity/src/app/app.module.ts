@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ProgramComponent } from './program/program.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProgramComponent } from './program/program.component';
     LoginComponent,
     MenuComponent,
     HomeComponent,
-    ProgramComponent
+    ProgramComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
   socialUser: SocialUser;
   userLogged: SocialUser;
   isLogged: boolean;
+  
 
   constructor(private authService: SocialAuthService, private router: Router) {
   
@@ -27,10 +28,10 @@ export class LoginComponent implements OnInit {
   signInWithGoogle(): void {
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(
       data => {
-        console.log(data);
         this.socialUser = data;
+        console.log(this.socialUser.idToken);
         this.isLogged = true;
-        this.router.navigate(['/'])
+        this.router.navigate(['/home'])
       }
       );
   }
