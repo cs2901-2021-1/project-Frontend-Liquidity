@@ -8,15 +8,15 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active" *ngIf="isLogged">
           <a class="nav-link" routerLink="/home">
-            <i class ="fas fa-home"></i>Inicio <span class="sr-only">(current)</span></a>
+            <em class ="fas fa-home"></em>Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active" *ngIf="isLogged">
           <a class="nav-link" routerLink="/program">
-            <i class="fas fa-play"></i>Program</a>
+            <em class="fas fa-play"></em>Program</a>
         </li>
         <li class="av-item active" *ngIf="isLogged">
           <a class="nav-link" routerLink="/users">
-            <i class="fas fa-users"></i>Users</a>
+            <em class="fas fa-users"></em>Users</a>
         </li>
         
       </ul>
@@ -27,10 +27,10 @@
           {{userLogged.name}}</a>
         </li>
       </ul>
-      <img *ngIf="isLogged" src="{{userLogged.photoUrl}}" class="rounded-square mr-3" style="width: 50px">
+      <img *ngIf="isLogged" src="{{userLogged.photoUrl}}" class="rounded-square mr-3" style="width: 50px" alt="">
 
         <button *ngIf="isLogged" class="btn btn-outline-danger my-2 my-sm-0" type="submit" (click)="logOut()">        <span>
-          <img src="https://intranet.utec.edu.pe/sites/default/files/google.svg">
+          <img src="https://intranet.utec.edu.pe/sites/default/files/google.svg" alt="">
         </span> Cerrar Sesion</button>
 
     </div>
