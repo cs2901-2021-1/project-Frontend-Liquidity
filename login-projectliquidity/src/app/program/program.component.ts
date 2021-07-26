@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgramComponent implements OnInit {
 
-  constructor() { }
+  constructor() { /*Todo*/}
 
   ngOnInit(): void {
   }
