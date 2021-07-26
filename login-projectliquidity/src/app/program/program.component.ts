@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgramComponent implements OnInit {
 
-  constructor() { /*Todo*/}
+  constructor() { 
+  /*This is intentional*/}
 
   ngOnInit(): void {
   }
-
+  /*This is intentional*/
 }
