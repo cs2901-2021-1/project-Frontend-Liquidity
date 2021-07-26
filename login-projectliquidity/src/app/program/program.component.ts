@@ -11,6 +11,7 @@ export class ProgramComponent implements OnInit {
   /*This is intentional*/}
 
   ngOnInit(): void {
+      /*This is intentional*/
   }
-  /*This is intentional*/
+
 }
